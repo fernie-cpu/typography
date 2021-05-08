@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #888;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: min-content minmax(140px, 2fr) 0 minmax(100px, 350px);
+  align-items: center;
+  width: 100%;
+  background: #575559;
+  padding: 1rem 2em;
+  z-index: 2;
+  column-gap: 10px;
+}
+
+.logo {
+  width: 3.2em;
+  font-size: 1em;
+  position: relative;
+  margin-top: 1em;
+  line-height: 0;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  transform: translate(0.15%);
+}
+
+.main-nav {
+  grid-column: auto;
+  position: relative;
+  font-size: 1.05em;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.4em 0;
+  list-style: none;
+  color: #fff;
+}
+
+.nav-list li {
+  padding: 0.35em 0.9rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  font-size: 1.2em;
+  border-radius: 0.4em;
+  cursor: pointer;
+}
+
+.nav-list li:hover {
+  background: #313131;
+}
+
+.nav-list li.more {
+  background: #212326;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.3);
+}
+
+.search {
+  margin-left: 1.2em;
+  flex-basis: 500px;
+}
+
+.search-input {
+  padding-left: calc(22px + 0.75em + 0.75em);
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgaGVpZ2h0PSIyNHB4IiB3aWR0aD0iMjRweCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSIyMi4zMSIgeTE9IjIzLjYyIiB4Mj0iMy43MyIgeTI9IjMuMDUiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNlOTM3MjIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmODZmMjUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48dGl0bGU+TWFnbmlmaWVyPC90aXRsZT48cGF0aCBmaWxsPSJ1cmwoI2xpbmVhci1ncmFkaWVudCkiIGQ9Ik0yMy4zMyAyMC4xbC00LjczLTQuNzRhMTAuMDYgMTAuMDYgMCAxIDAtMy4yMyAzLjIzbDQuNzQgNC43NGEyLjI5IDIuMjkgMCAxIDAgMy4yMi0zLjIzem0tMTcuNDgtNS44NGE1Ljk0IDUuOTQgMCAxIDEgOC40MiAwIDYgNiAwIDAgMS04LjQyIDB6Ii8+PC9zdmc+");
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: 0.75em;
+  font-size: calc(1em + 0.1vw);
+  border-radius: 11px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-weight: 700;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.3);
+  border: none;
+}
